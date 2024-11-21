@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>My Portfolio</title>
+<style>
+    /* Reset */
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Arial, sans-serif;
+    }
+
+    /* Background and Hero Section */
+    body {
+        background: linear-gradient(to right, #4A90E2, #9013FE);
+        color: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        text-align: center;
+    }
+
+    .hero {
+        max-width: 600px;
+    }
+
+    .hero h1 {
+        font-size: 3em;
+        margin-bottom: 10px;
+    }
+
+    .hero p {
+        font-size: 1.2em;
+        margin-bottom: 20px;
+    }
+
+    .btn {
+        margin: 10px;
+        padding: 10px 20px;
+        background-color: #fff;
+        color: #4A90E2;
+        text-decoration: none;
+        border-radius: 5px;
+        transition: background 0.3s;
+        display: inline-block;
+        font-size: 1em;
+    }
+
+    .btn:hover {
+        background-color: #eee;
+    }
+
+    /* Typing Animation */
+    #typed-text {
+        font-weight: bold;
+    }
+
+    #myName {
+        color: yellow;
+    }
+
+    /* Responsive Design */
+    @media (max-width: 600px) {
+        .hero h1 {
+            font-size: 2.5em;
+        }
+
+        .hero p {
+            font-size: 1em;
+        }
+
+        .btn {
+            font-size: 0.9em;
+            padding: 8px 16px;
+        }
+    }
+
+    @media (max-width: 360px) {
+        .hero h1 {
+            font-size: 2em;
+        }
+
+        .hero p {
+            font-size: 0.9em;
+        }
+
+        .btn {
+            font-size: 0.8em;
+            padding: 6px 12px;
+        }
+    }
+
+    @media (min-width: 720px) and (max-width: 1024px) {
+        .hero h1 {
+            font-size: 3.5em;
+        }
+
+        .hero p {
+            font-size: 1.4em;
+        }
+
+        .btn {
+            font-size: 1.1em;
+            padding: 12px 24px;
+        }
+    }
+
+    @media (min-width: 1024px) {
+        .hero h1 {
+            font-size: 4em;
+        }
+
+        .hero p {
+            font-size: 1.5em;
+        }
+
+        .btn {
+            font-size: 1.2em;
+            padding: 14px 28px;
+        }
+    }
+</style>
+</head>
+<body>
+
+<div class="hero">
+    <h1>Hi, I'm <span id="myName">Tebogo Phala</span></h1>
+    <p>also known as Glamorous</p>
+    <h2>Web Developer & Designer</h2>
+    <p>A Passionate Developer Who Turns Ideas Into Digital Experiences.<br>So let's create something Amazing Together!</p>
+    <p id="typed-text"></p>
+    <a href="PersonalInfoPage.html" class="btn">View My Work</a>
+    <a href="ContactsPage.html" class="btn">Get in Touch</a>
+</div>
+
+<!-- Typed.js Animation Script -->
+<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+<script>
+    new Typed("#typed-text", {
+        strings: ["Web Developer", "UI/UX Designer", "Freelancer"],
+        typeSpeed: 100,
+        backSpeed: 50,
+        loop: true
+    });
+</script>
+
+</body>
+</html>
+

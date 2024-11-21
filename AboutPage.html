@@ -1,0 +1,263 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Page</title>
+    <style>
+        /* Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Background */
+        body {
+            background: linear-gradient(to right, #4A90E2, #9013FE);
+            color: #FFFFFF;
+        }
+
+        /* Header */
+        #pageName1 {
+            color: #FFFFFF;
+            font-size: 2em;
+            background-color: rgba(255, 255, 255, 0.1);
+            border-radius: 7px;
+            text-align: center;
+            margin: 20px 5px;
+            padding: 10px;
+        }
+
+        /* Navigation Bar */
+        #nevBar {
+            list-style-type: none;
+            background-color: rgba(255, 255, 255, 0.2);
+            height: 40px;
+            border-radius: 5px;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        #nevBar ul {
+            padding: 5px 0;
+        }
+
+        #nevBar ul li {
+            padding: 0 10px;
+            display: inline;
+        }
+
+        #nevBar ul li a {
+            text-decoration: none;
+            color: #FFFFFF;
+            font-weight: bold;
+            transition: color 0.3s;
+            font-size: 1em;
+        }
+
+        #nevBar ul li a:hover {
+            color: #EEEEEE;
+        }
+
+        #About {
+            color: #FFFFFF;
+            background-color: rgba(0, 0, 0, 0.2);
+            border-radius: 5px;
+            padding: 5px;
+        }
+
+        /* About Content */
+        #aboutContent1 {
+            margin: 20px;
+            background-color: rgba(0, 0, 0, 0.3);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
+        }
+
+        #first {
+            text-align: center;
+            font-weight: bold;
+            font-size: 1.5em;
+            color: #FFFFFF;
+        }
+
+        #names {
+            color: #EEEEEE;
+            font-family: Georgia, serif;
+            font-weight: bold;
+            font-size: 2em;
+        }
+
+        .content {
+            margin: 20px;
+            padding: 20px;
+            background-color: rgba(0, 0, 0, 0.3);
+            border: 1px solid #FFFFFF;
+            border-radius: 10px;
+            box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
+        }
+
+        #portfolio {
+            color: #EEEEEE;
+            font-size: 1.2em;
+            font-weight: bold;
+        }
+
+        /* Responsive Design */
+        
+        @media (max-width: 435px){
+            #nevBar ul li {
+                font-size: 12px;
+                padding: 5px;
+                margin: 6px;
+            }
+            
+        }
+        @media (max-width: 600px) {
+            #pageName1 {
+                font-size: 1.5em;
+                padding: 8px;
+            }
+
+            #nevBar ul li a {
+                font-size: 0.9em;
+            }
+
+            #first {
+                font-size: 1.2em;
+            }
+
+            #names {
+                font-size: 1.5em;
+            }
+
+            .content {
+                margin: 10px;
+                padding: 15px;
+            }
+
+            #portfolio {
+                font-size: 1em;
+            }
+        }
+
+        @media (max-width: 400px) {
+            #pageName1 {
+                font-size: 1.2em;
+                padding: 5px;
+            }
+
+            #nevBar {
+                height: 35px;
+            }
+
+            #nevBar ul li a {
+                font-size: 0.8em;
+            }
+
+            #first {
+                font-size: 1em;
+            }
+
+            #names {
+                font-size: 1.2em;
+            }
+
+            .content {
+                margin: 5px;
+                padding: 10px;
+            }
+
+            #portfolio {
+                font-size: 0.9em;
+            }
+        }
+
+        @media (min-width: 768px) {
+            #pageName1 {
+                font-size: 2.5em;
+                padding: 15px;
+            }
+
+            #first {
+                font-size: 2em;
+            }
+
+            #names {
+                font-size: 2.2em;
+            }
+
+            .content {
+                margin: 20px;
+                padding: 25px;
+            }
+
+            #portfolio {
+                font-size: 1.5em;
+            }
+        }
+
+        @media (min-width: 1024px) {
+            #pageName1 {
+                font-size: 3em;
+            }
+
+            #nevBar ul li a {
+                font-size: 1.2em;
+            }
+
+            #first {
+                font-size: 2.5em;
+            }
+
+            #names {
+                font-size: 2.5em;
+            }
+
+            .content {
+                padding: 30px;
+            }
+
+            #portfolio {
+                font-size: 1.8em;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <h1 id="pageName1">My Portfolio</h1>
+
+    <div id="nevBar">
+        <ul id="navBarOptn">
+            <li><a href="PersonalInfoPage.html" class="navDirection">Personal Info</a></li>
+            <li><a href="" class="navDirection"><span id="About">About</span></a></li>
+            <li><a href="PortfolioPage.html" class="navDirection">Portfolio Page</a></li>
+            <li><a href="ContactsPage.html" class="navDirection">Contacts</a></li>
+        </ul>
+    </div>
+
+    <div id="aboutContent1">
+        <h2 id="first">This section is about my experience, what I do, and how my journey in web development began.</h2>
+    </div>
+
+    <div class="content" id="aboutContent2">
+        <p>Hello, I'm <span id="names">Tebogo Phala</span>, a passionate web developer based in Johannesburg. I specialize in crafting responsive and user-friendly websites.</p>
+        <p>As a skilled web developer, I excel in HTML, CSS, JavaScript, and am currently learning Python and C++. My expertise includes web development, design, and UI/UX design.</p>
+    </div>
+
+    <div class="content" id="aboutContent3">
+        <p>My journey in web development began with an interest in JavaScript, and I discovered that with HTML, CSS, and JavaScript, I could create my own website. This led me to focus on educational websites to help boost student pass rates.</p>
+        <p>I’m committed to delivering high-quality solutions that exceed client expectations, with a focus on user experience, innovation, and continuous learning.</p>
+    </div>
+
+    <div class="content" id="aboutContent4">
+        <p>Outside of coding, I enjoy exploring technology, playing soccer and basketball, and gaming. If I’m not doing any of these, I’m likely coding on my PC.</p>
+        <p>Please explore my <span id="portfolio">portfolio</span> to see my work in action. Let’s connect and create something amazing together!</p>
+    </div>
+</body>
+</html>
+
